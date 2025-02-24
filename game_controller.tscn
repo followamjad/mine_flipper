@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://d2slxhl1ayat3"]
+
+[node name="game_controller" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.309804, 0.254902, 0.301961, 1)
+
+[node name="label_current_money" type="Label" parent="CanvasLayer"]
+offset_left = 58.0
+offset_top = 51.0
+offset_right = 252.0
+offset_bottom = 90.0
+theme_override_font_sizes/font_size = 28
+text = "Money : $1000"
+
+[node name="label_current_day" type="Label" parent="CanvasLayer"]
+offset_left = 58.0
+offset_top = 94.0
+offset_right = 252.0
+offset_bottom = 133.0
+theme_override_font_sizes/font_size = 28
+text = "Day 1"
+
+[node name="container_time" type="HBoxContainer" parent="CanvasLayer"]
+offset_left = 61.0
+offset_top = 140.0
+offset_right = 152.0
+offset_bottom = 185.0
+
+[node name="label_hour_time" type="Label" parent="CanvasLayer/container_time"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "00"
+
+[node name="label_static_time" type="Label" parent="CanvasLayer/container_time"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = ":"
+
+[node name="label_minute_time" type="Label" parent="CanvasLayer/container_time"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "00"
